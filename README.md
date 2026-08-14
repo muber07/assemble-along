@@ -1,6 +1,6 @@
 # Assemble Along
 
-An iPhone-first guide for putting together furniture and other products without getting lost in an instruction manual.
+An accessible web app for putting together furniture and other products without getting lost in an instruction manual.
 
 ## What this prototype demonstrates
 
@@ -10,7 +10,19 @@ An iPhone-first guide for putting together furniture and other products without 
 - Follow a focused, step-by-step assembly flow
 - Use a phone level for final alignment
 
-## Run the native app
+## Run the web app
+
+Open `index.html` in a modern browser. The static web app is responsive, works on phones and desktops, and supports:
+
+- Device camera or photo-library input for product and receipt capture
+- Product-link entry and manual uploads
+- Product-match confirmation and parts check
+- Interactive build guidance
+- Browser motion-permission flow for the level tool on supported phones
+
+No build step or server is required for the prototype. Deploy the repository to GitHub Pages, Netlify, or Vercel for a public URL.
+
+## Native iOS starter
 
 1. Install Xcode 15 or newer from the Mac App Store.
 2. Open `AssembleAlong.xcodeproj`.
@@ -21,7 +33,8 @@ The native app currently has real camera/photo-library selection and uses device
 
 ## Contents
 
-- `index.html` — interactive iPhone-style prototype. Open this file in a browser to try the flow.
+- `index.html` — responsive, interactive web app.
+- `manifest.webmanifest` — installable-web-app metadata.
 - `AssembleAlong.xcodeproj` — native Xcode project.
 - `AssembleAlong/AssembleAlongApp.swift` — SwiftUI implementation of the first-version product flow.
 - `AssembleAlong/Info.plist` — required camera, photo-library, and motion permission text.
