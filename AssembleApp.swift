@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct AssembleApp: App {
+struct AssembleAlongApp: App {
     var body: some Scene { WindowGroup { AssemblyFlowView() } }
 }
 

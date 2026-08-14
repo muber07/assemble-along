@@ -1,4 +1,4 @@
-# Assemble
+# Assemble Along
 
 An iPhone-first guide for putting together furniture and other products without getting lost in an instruction manual.
 
