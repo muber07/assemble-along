@@ -10,10 +10,22 @@ An iPhone-first guide for putting together furniture and other products without 
 - Follow a focused, step-by-step assembly flow
 - Use a phone level for final alignment
 
+## Run the native app
+
+1. Install Xcode 15 or newer from the Mac App Store.
+2. Open `AssembleAlong.xcodeproj`.
+3. Select an iPhone simulator or a connected iPhone.
+4. In **Signing & Capabilities**, select your Apple Developer team before running on a device.
+
+The native app currently has real camera/photo-library selection and uses device motion for the level tool. It runs on iOS 17+.
+
 ## Contents
 
 - `index.html` — interactive iPhone-style prototype. Open this file in a browser to try the flow.
-- `AssembleApp.swift` — standalone SwiftUI implementation of the same product flow for an Xcode iOS app.
+- `AssembleAlong.xcodeproj` — native Xcode project.
+- `AssembleAlong/AssembleAlongApp.swift` — SwiftUI implementation of the first-version product flow.
+- `AssembleAlong/Info.plist` — required camera, photo-library, and motion permission text.
+- `AssembleApp.swift` — original standalone SwiftUI reference implementation.
 
 ## Native iOS direction
 
